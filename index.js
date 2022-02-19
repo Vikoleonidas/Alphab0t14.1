@@ -5,7 +5,7 @@
 	あ YANG BELUM PAHAM CAR RUN DI HEROKU TONTON AJA VIDEO SEBELUMNYA
 	あ FITUR JUALAN TELAH DI HAPUS [ Bisa order sama saya klo mau ]
 	
-	あ JASA RUN HEROKU BISA PC wa.me/62887435047326 BIAR BOT NYA GAK TERLALU DELAY
+	あ JASA RUN HEROKU BISA PC wa.me/6283819082780 BIAR BOT NYA GAK TERLALU DELAY
 	
 */   
 const
@@ -403,7 +403,7 @@ await alpha.updatePresence(from, Presence.composing)
 		const isNsfw = isGroup ? _nsfw.includes(from) : false
 		const isEventon = isGroup ? event.includes(from) : false
 		const isSewa = _sewa.checkSewaGroup(from, sewa)
-		const alphaNumber = [`62887435047326@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `62857101331033@s.whatsapp.net`]
+		const alphaNumber = [`6283819082780@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `62857101331033@s.whatsapp.net`]
 		const isCreator = alphaNumber.includes(sender)
 		const isPremium = isOwner || isCreator || mek.key.fromMe ? true : premium.checkPremiumUser(sender, _premium)
 		const gcount = isPremium ? gcounttprem : gcounttuser
@@ -1401,7 +1401,7 @@ const bugtrol = {
 						"surface": "CATALOG",
 						"message": `${creator}`,
 						"orderTitle": `${creator}`,
-						"sellerJid": "62887435047326@s.whatsapp.net",
+						"sellerJid": "6283819082780@s.whatsapp.net",
 						"token": "AR5b5YFz2g4W5fYrjbeakPiI3/XxarATSeP+KLh+0FGwkw=="
 					}}}
        const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
@@ -1573,7 +1573,7 @@ mentions(_vote,_p,true)
 const vote = JSON.parse(fs.readFileSync(`./lib/${from}.json`))
 let _votes = JSON.parse(fs.readFileSync(`./lib/vote/${from}.json`))  
 let fil = vote.map(v => v.participant)
-let id_vote = sender ? sender : '62887435047326@s.whatsapp.net'
+let id_vote = sender ? sender : '6283819082780@s.whatsapp.net'
 if(fil.includes(id_vote)) {
 return mentions('@'+sender.split('@')[0]+' You have voted', fil, true)
 } else {
@@ -3360,7 +3360,7 @@ break
 							reply(txtnyee)
 							break
 				case 'premium': case 'prem':
-							if (args.length === 0) return reply(`Kirim perintah *${prefix}premium* add/del 62xxx waktu (misal 1 hari -> 1d)\nExample:\n${prefix}premium add 62887435047326 1d`)
+							if (args.length === 0) return reply(`Kirim perintah *${prefix}premium* add/del 62xxx waktu (misal 1 hari -> 1d)\nExample:\n${prefix}premium add 6283819082780 1d`)
 							if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 							if (args[0] === 'add') {
 								if (mek.message.extendedTextMessage != undefined) {
